@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myAppPOO" />
+        <module name="Prova2" />
+        <module name="SC3008517_P2" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="344.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.controller.OlimpiadaController">
+    <children>
+        <TextField fx:id="txtCountry" layoutX="153.0" layoutY="20.0" prefHeight="25.0" prefWidth="86.0" text="País" />
+        <TextField fx:id="txtYear" layoutX="252.0" layoutY="20.0" prefHeight="25.0" prefWidth="75.0" text="Ano" />
+        <Label layoutX="14.0" layoutY="24.0" text="Sede:" />
+        <TextField fx:id="txtName" layoutX="53.0" layoutY="20.0" prefHeight="25.0" prefWidth="86.0" text="Nome" />
+        <Button fx:id="btnAddOlimpiada" layoutX="386.0" layoutY="20.0" mnemonicParsing="false" onAction="#createOlimpiada" text="Criar Olimpiada" />
+        <TableView fx:id="table" layoutX="1.0" layoutY="83.0" prefHeight="200.0" prefWidth="528.0">
+            <columns>
+                <TableColumn fx:id="cId" prefWidth="38.0" text="id" />
+                <TableColumn fx:id="cName" prefWidth="71.0" text="nome" />
+                <TableColumn fx:id="cModality" prefWidth="85.0" text="modalidade" />
+                <TableColumn fx:id="cCountry" prefWidth="85.0" text="país" />
+                <TableColumn fx:id="cBirthday" prefWidth="152.0" text="data de nascimento" />
+                <TableColumn fx:id="cDeficiency" prefWidth="96.0" text="deficiência" />
+            </columns>
+        </TableView>
+        <Label fx:id="lbOlimpíada" layoutX="180.0" layoutY="55.0" text="Olimpíada :  -" />
+        <Label layoutX="14.0" layoutY="300.0" text="Atletas Participantes" />
+        <Button fx:id="btnAddAtleta" layoutX="293.0" layoutY="296.0" mnemonicParsing="false" onAction="#addAtleta" text="Adicionar" />
+        <Button fx:id="btnUpdateAtleta" layoutX="369.0" layoutY="296.0" mnemonicParsing="false" onAction="#updateAtleta" text="Atualizar" />
+        <Button fx:id="btnRemove" layoutX="443.0" layoutY="296.0" mnemonicParsing="false" onAction="#removeAtleta" text="Remover" />
+    </children>
+</AnchorPane>

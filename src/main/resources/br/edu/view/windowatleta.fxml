@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="448.0" prefWidth="262.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.controller.AtletaController">
+   <children>
+      <ChoiceBox fx:id="cbAtleta" layoutX="56.0" layoutY="33.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="txtCod" layoutX="58.0" layoutY="72.0" promptText="Código" />
+      <TextField fx:id="txtName" layoutX="58.0" layoutY="119.0" promptText="Nome" />
+      <TextField fx:id="txtModality" layoutX="58.0" layoutY="166.0" promptText="Modalidade" />
+      <TextField fx:id="txtCountry" layoutX="58.0" layoutY="204.0" promptText="País" />
+      <Button fx:id="btnSaveOrUpdateAtleta" layoutX="104.0" layoutY="409.0" mnemonicParsing="false" onAction="#saveOrUpdate" prefHeight="25.0" prefWidth="53.0" text="Salvar" />
+      <DatePicker fx:id="dpBirthday" layoutX="58.0" layoutY="250.0" prefHeight="25.0" prefWidth="149.0" promptText="Data de Nascimento" />
+      <Separator layoutX="31.0" layoutY="287.0" prefWidth="200.0" />
+      <Label layoutX="72.0" layoutY="299.0" text="Deficiência(Se houver)" />
+      <ComboBox fx:id="cbDeficiency" layoutX="33.0" layoutY="340.0" prefHeight="25.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

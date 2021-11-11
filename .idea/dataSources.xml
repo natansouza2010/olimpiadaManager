@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlite:C:\Users\natan\OneDrive\Área de Trabalho\4º SEMESTRE\POO_EAD\myAppPOO\dbProducts.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="db_atletas" uuid="bd45e4fe-279b-4b81-99b3-beb3b82fb747">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\natan\OneDrive\Área de Trabalho\Prova2\db_atletas.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
